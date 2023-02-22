@@ -1,0 +1,17 @@
+df = pd.read_csv('file name.csv') # read csv file with pandas frame
+df.head() # show first five row and columns
+df.info() # summary for the csv file. what type of information have.
+df.shape  # show how many column and raw have on the sheet.
+df.columns # show all columns names
+df.ISO2 # show all countries short from
+df['Country Name'] # show countries name
+df.iloc[4] # show raw number 4 with all information
+df.Continent # show all continent in the world. like Asia, Europe, Africa
+df.Continent == 'Europe' # show  true or false how many counties Europeian 
+df[df.Continent == 'Europe'].head(10) # show first 10 Europeian countries
+df2 = df[df.Continent == 'Asia'] # save other area
+df.to_csv('Asia.csv', index=Flase) # convert new csv file as name of Asia.csv
+df.iloc[4:20] # check location row 4 to 20
+df['Comments'] = 1 # Create new column save value 1
+
+
